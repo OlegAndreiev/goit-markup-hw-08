@@ -3,6 +3,8 @@
   @include section(94px, 47px);
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   &__title {
     @include font(null, 700, 14px, 1.14, 0.03em, var(--title-text-color));
@@ -24,8 +26,15 @@
 }
 
 .section-features__item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
   }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+
+  // width: 270px;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
 }

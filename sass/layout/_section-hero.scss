@@ -1,9 +1,8 @@
 /* Hero */
 
 .overlay {
-  @include section(200px, 200px);
-  height: 600px;
-  max-width: 1600px;
+  width: 100%;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -13,16 +12,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include mobile {
+    height: 400px;
+    @include section(118px, 118px);
+  }
+  @include tablet {
+    height: 400px;
+  }
+  @include desktop {
+    height: 600px;
+    max-width: 1600px;
+    @include section(200px, 200px);
+  }
 }
 
 .hero-content__title {
   @include font(null, 900, 44px, 1.36, 0.06em, var(--primary-bg-color));
   text-align: center;
   text-transform: uppercase;
-
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  width: 696px;
 
-  max-width: 696px;
+  @include mobile {
+    @include font(null, null, 26px, 1.62, null, null);
+    width: 360px;
+  }
+  @include tablet {
+    @include font(null, null, 26px, 1.62, null, null);
+    width: 360px;
+  }
+  @include desktop {
+    @include font(null, null, 44px, 1.36, null, null);
+    width: 696px;
+  }
 }
