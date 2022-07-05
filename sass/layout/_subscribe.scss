@@ -1,20 +1,18 @@
 .subscribe {
   display: block;
   margin-left: auto;
+  &__form {
+    display: flex;
+  }
+  &__title {
+    margin-bottom: 20px;
+
+    @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
+    text-transform: uppercase;
+  }
 }
 
-.subscribe-form {
-  display: flex;
-}
-
-.subscribe-title {
-  margin-bottom: 20px;
-
-  @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
-  text-transform: uppercase;
-}
-
-.subscribe-input {
+.subscribe__input {
   padding: 15px 16px;
   margin-right: 12px;
   width: 358px;

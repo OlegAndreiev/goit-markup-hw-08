@@ -1,6 +1,17 @@
 /* Логотип */
 .logo {
+  display: block;
+  &__pre-logo {
+    color: var(--accent-color);
+  }
+}
+
+.main-header__logo {
   @include section(24px, 24px);
+}
+
+.main-footer__logo {
+  margin-bottom: 20px;
 }
 
 .logo--color-light {

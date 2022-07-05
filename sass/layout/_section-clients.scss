@@ -2,16 +2,18 @@
 .section-clients {
   @include section(94px, 94px);
   background-color: var(--primary-bg-color);
-}
-
-.clients-list {
-  display: flex;
-  .item:not(:last-child) {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
     margin-right: 30px;
+  }
+  &__icon {
+    fill: currentColor;
   }
 }
 
-.client-link {
+.section-clients__link {
   width: 170px;
   height: 92px;
   @extend %align-items;
@@ -28,8 +30,4 @@
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
   }
-}
-
-.client-icon {
-  fill: currentColor;
 }
