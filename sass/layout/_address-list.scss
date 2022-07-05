@@ -1,0 +1,27 @@
+.address-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.work-address,
+.contacts {
+  font-style: normal;
+  @include font(null, null, 14px, 1.71, 0.03em, null);
+
+  @include transition(null, color, null);
+}
+
+.work-address {
+  color: var(--button-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts {
+  color: var(--contacts-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

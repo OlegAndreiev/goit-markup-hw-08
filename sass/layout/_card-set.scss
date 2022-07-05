@@ -1,0 +1,86 @@
+.card-set {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-set__filter {
+  @extend %align-items;
+  margin-bottom: 50px;
+  .button__filter {
+    padding: 6px 22px;
+    border-radius: 4px;
+  }
+}
+
+.card-set__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-set__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set__card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+.card-set__title {
+  @include font(null, 700, 18px, 2, 0.06em, var(--title-text-color));
+}
+
+.card-set__work {
+  margin-bottom: 4px;
+  @include font(null, null, 16px, 1.88, 0.03em, var(--primary-text-color));
+}
+
+.card-set__text {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+}
+
+.card-set__link {
+  display: block;
+
+  @include transition(null, null, box-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-set__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-set__wrap-text {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  padding: 63px 24px;
+
+  @include font(null, 400, 18px, 1.56, 0.03em, #ffffff);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  /* 101% - потому-что при зуме окна в 125% видны синие линии */
+  @include transition(transform, null, null);
+
+  .card-set__card:hover &,
+  .card-set__link:focus & {
+    transform: translateY(0);
+  }
+}

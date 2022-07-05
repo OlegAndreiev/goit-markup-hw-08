@@ -1,0 +1,17 @@
+/* Логотип */
+.logo {
+  @include section(24px, 24px);
+}
+
+.logo--color-light {
+  color: var(--logo-footer-text-color);
+}
+
+.logo--color-dark {
+  color: var(--logo-header-text-color);
+}
+
+.logo--font {
+  font-family: 'Raleway', sans-serif;
+  @include font(null, 700, 26px, 1.19, 0.03em, null);
+}

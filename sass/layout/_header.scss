@@ -1,0 +1,10 @@
+/* Header  */
+.header {
+  background-color: var(--header-bg-color);
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  width: 100%;
+}
+
+.main-header {
+  @extend %align-items;
+}

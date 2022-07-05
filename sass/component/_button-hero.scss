@@ -1,0 +1,24 @@
+/* Кнопка */
+.hero-content__button {
+  @extend %align-items;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+
+  background-color: var(--button-bg-color);
+
+  @include font(null, 700, 16px, 1.87, 0.06em, var(--button-text-color));
+  text-align: center;
+  border-style: none;
+  cursor: pointer;
+
+  @include transition(background-color, color, null);
+
+  &:hover,
+  &:focus {
+    color: var(--button-text-color);
+    background-color: var(--button-bg-hover-color);
+  }
+}

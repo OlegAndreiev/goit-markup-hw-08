@@ -1,0 +1,12 @@
+/* Footer  */
+
+.footer {
+  @include section(60px, 60px);
+  width: 100%;
+  background-color: var(--footer-bg-color);
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}

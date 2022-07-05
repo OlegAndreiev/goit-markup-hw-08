@@ -1,0 +1,33 @@
+/* Work */
+
+.section-work {
+  @include section(47px, 94px);
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-list .work-type {
+  position: absolute;
+  bottom: 0;
+
+  @extend %align-items;
+  height: 70px;
+  width: 100%;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+
+.work-type-text {
+  @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+}

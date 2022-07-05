@@ -1,0 +1,33 @@
+/* Features */
+.section-features {
+  @include section(94px, 47px);
+}
+
+.features-list {
+  display: flex;
+  .title {
+    @include font(null, 700, 14px, 1.14, 0.03em, var(--title-text-color));
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+  .text {
+    @include font(null, null, 14px, 1.71, 0.03em, null);
+  }
+  .item {
+    width: 270px;
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.item-icon {
+  @extend %align-items;
+  height: 120px;
+
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}

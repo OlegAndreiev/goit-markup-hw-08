@@ -1,0 +1,21 @@
+.button-close {
+  position: absolute;
+  @extend %align-items;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  background-color: #fff;
+
+  @include transition(fill, null, null);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
