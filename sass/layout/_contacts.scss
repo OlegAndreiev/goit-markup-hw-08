@@ -1,6 +1,15 @@
-.contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+@include mobile {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
+
+@include desktop {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
 .contacts__address,
 .contacts__contacts {
   font-style: normal;

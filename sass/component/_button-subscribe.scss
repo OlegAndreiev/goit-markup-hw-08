@@ -1,6 +1,10 @@
 .subscribe-button {
   width: 200px;
   height: 50px;
+  @include mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   padding-top: 10px;
   padding-bottom: 10px;

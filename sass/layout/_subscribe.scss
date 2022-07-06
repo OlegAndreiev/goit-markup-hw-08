@@ -1,12 +1,19 @@
 .subscribe {
   display: block;
-  margin-left: auto;
+  @include mobile {
+    display: block;
+  }
+  @include desktop {
+    display: block;
+    margin-left: auto;
+  }
   &__form {
     display: flex;
     @include mobile {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+      display: block;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      // gap: 20px;
     }
   }
   &__title {
@@ -21,10 +28,17 @@
 
 .subscribe__input {
   padding: 15px 16px;
-  margin-right: 12px;
-  width: 358px;
   height: 50px;
 
+  @include mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    width: 358px;
+    margin-right: 12px;
+  }
   line-height: 1.25;
   display: block;
   align-items: center;
