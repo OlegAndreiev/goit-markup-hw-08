@@ -1,5 +1,6 @@
 /* Features */
 .section-features {
+  min-width: 480px;
   @include section(94px, 47px);
   &__list {
     display: flex;
@@ -27,6 +28,7 @@
 
 .section-features__item {
   width: 100%;
+
   @include tablet {
     width: calc((100% - 30px) / 2);
   }

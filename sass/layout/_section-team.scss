@@ -1,4 +1,5 @@
 .section-team {
+  min-width: 480px;
   background-color: var(--section-bg-color);
   @include mobile {
     @include section(60px, null);
