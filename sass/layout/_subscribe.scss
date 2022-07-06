@@ -3,10 +3,17 @@
   margin-left: auto;
   &__form {
     display: flex;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
   &__title {
     margin-bottom: 20px;
-
+    @include mobile {
+      text-align: center;
+    }
     @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
     text-transform: uppercase;
   }

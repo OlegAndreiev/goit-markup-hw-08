@@ -2,11 +2,25 @@
 
 .footer {
   @include section(60px, 60px);
-  width: 100%;
+  // width: 100%;
+  min-width: 480px;
+
   background-color: var(--footer-bg-color);
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+.main-footer {
+  @include mobile {
+    text-align: center;
   }
 }

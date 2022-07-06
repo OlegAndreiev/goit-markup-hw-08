@@ -1,6 +1,7 @@
 /* Work */
 
 .section-work {
+  min-width: 480px;
   @include section(47px, 94px);
   &__list {
     display: flex;

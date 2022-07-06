@@ -230,8 +230,16 @@ body {
   letter-spacing: 0.03em;
 }
 
-.social__join {
-  margin-left: 70px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .social__join {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social__join {
+    margin-left: 70px;
+  }
 }
 
 .social-links__title {
@@ -241,8 +249,17 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .social-links__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-links__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .social-links__list {
@@ -399,12 +416,20 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 100%;
+  min-width: 480px;
   background-color: var(--footer-bg-color);
 }
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-footer {
+    text-align: center;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -611,6 +636,12 @@ body {
   padding-top: 94px;
   padding-bottom: 47px;
 }
+@media screen and (max-width: 1199px) {
+  .section-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .section-features__list {
   display: flex;
   flex-wrap: wrap;
@@ -624,6 +655,11 @@ body {
   color: var(--title-text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .section-features__title {
+    text-align: center;
+  }
 }
 .section-features__text {
   font-size: 14px;
@@ -653,6 +689,7 @@ body {
 
 /* Work */
 .section-work {
+  min-width: 480px;
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -692,14 +729,10 @@ body {
   min-width: 480px;
   background-color: var(--section-bg-color);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-team {
     padding-top: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-team {
-    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -734,22 +767,56 @@ body {
 
 /* Clients */
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  min-width: 480px;
   background-color: var(--primary-bg-color);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.section-clients__item:not(:last-child) {
-  margin-right: 30px;
+.section-clients__item {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .section-clients__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .section-clients__icon {
   fill: currentColor;
 }
 
 .section-clients__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   outline: transparent;
   color: rgb(175, 177, 184);
@@ -771,6 +838,13 @@ body {
 .subscribe__form {
   display: flex;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe__form {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -779,6 +853,11 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe__title {
+    text-align: center;
+  }
 }
 
 .subscribe__input {

@@ -1,12 +1,24 @@
 .social__join {
-  margin-left: 70px;
+  @include mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
 }
 .social-links__title {
   @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
   text-transform: uppercase;
-
-  margin: 0;
-  margin-bottom: 20px;
+  @include mobile {
+    text-align: center;
+  }
+  @include tablet {
+  }
+  @include desktop {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .social-links__list {
