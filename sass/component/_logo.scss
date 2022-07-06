@@ -24,5 +24,13 @@
 
 .logo--font {
   font-family: 'Raleway', sans-serif;
-  @include font(null, 700, 26px, 1.19, 0.03em, null);
+  @include mobile {
+    @include font(null, 700, 24px, 1.16, 0.03em, null);
+  }
+  @include tablet {
+    @include font(null, 700, 24px, 1.16, 0.03em, null);
+  }
+  @include desktop {
+    @include font(null, 700, 26px, 1.19, 0.03em, null);
+  }
 }
