@@ -149,9 +149,23 @@ body {
   color: var(--accent-color);
 }
 
-.main-header__logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-header__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-header__logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .main-footer__logo {
@@ -457,6 +471,12 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-header {
+    justify-content: flex-start;
+  }
+}
+
 /* Footer  */
 .footer {
   padding-top: 60px;
@@ -540,14 +560,26 @@ body {
 }
 
 /* Site nav */
-.nav__site {
-  margin-left: 93px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__site {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__site {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__site {
+    margin-left: 93px;
+  }
 }
 
 .menu {
   display: flex;
 }
-.menu .link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -560,11 +592,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu .link:hover,
-.menu .link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
-.menu .link.current {
+.menu__link.current {
   color: var(--accent-color);
 }
 
@@ -608,17 +639,31 @@ body {
 /* Auth nav */
 .header__connect {
   display: flex;
-  margin-left: auto;
 }
-
-.connect__item + .connect__item {
-  margin-left: 50px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__connect {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__connect {
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__connect {
+    margin-left: auto;
+    flex-direction: row;
+  }
+  .header__connect .connect__item + .connect__item {
+    margin-left: 50px;
+  }
 }
 
 .connect__link {
   display: inline-flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   fill: var(--primary-text-color);
   align-items: center;
   font-weight: 500;
@@ -629,6 +674,12 @@ body {
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .connect__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .connect__link:hover, .connect__link:focus {
   color: var(--accent-color);

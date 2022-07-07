@@ -1,16 +1,30 @@
 /* Auth nav */
 .header__connect {
   display: flex;
-  margin-left: auto;
-}
-
-.connect__item + .connect__item {
-  margin-left: 50px;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+  @include desktop {
+    margin-left: auto;
+    flex-direction: row;
+    .connect__item + .connect__item {
+      margin-left: 50px;
+    }
+  }
 }
 
 .connect__link {
   display: inline-flex;
-  @include section(32px, 32px);
+  @include tablet {
+  }
+  @include desktop {
+    @include section(32px, 32px);
+  }
 
   fill: var(--primary-text-color);
   align-items: center;

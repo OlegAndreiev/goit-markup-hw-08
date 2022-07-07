@@ -7,4 +7,7 @@
 
 .main-header {
   @extend %align-items;
+  @include mobile {
+    justify-content: flex-start;
+  }
 }

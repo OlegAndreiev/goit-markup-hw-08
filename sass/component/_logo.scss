@@ -7,7 +7,15 @@
 }
 
 .main-header__logo {
-  @include section(24px, 24px);
+  @include mobile {
+    @include section(16px, 16px);
+  }
+  @include tablet {
+    @include section(26px, 26px);
+  }
+  @include desktop {
+    @include section(24px, 24px);
+  }
 }
 
 .main-footer__logo {

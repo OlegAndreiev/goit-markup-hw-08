@@ -1,24 +1,30 @@
 /* Site nav */
 .nav__site {
-  margin-left: 93px;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    margin-left: 88px;
+  }
+  @include desktop {
+    margin-left: 93px;
+  }
 }
 
 .menu {
   display: flex;
 
-  .link {
+  &__link {
     display: block;
     @include section(32px, 32px);
-
     @include font(null, 500, 14px, 1.14, 0.02em, var(--title-text-color));
-
     @include transition(null, color, null);
   }
-  .link:hover,
-  .link:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--accent-color);
   }
-  .link.current {
+  &__link.current {
     color: var(--accent-color);
   }
 }
