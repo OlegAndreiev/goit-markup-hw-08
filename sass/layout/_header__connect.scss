@@ -20,8 +20,7 @@
 
 .connect__link {
   display: inline-flex;
-  @include tablet {
-  }
+
   @include desktop {
     @include section(32px, 32px);
   }

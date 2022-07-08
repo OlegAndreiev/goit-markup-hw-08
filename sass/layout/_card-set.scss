@@ -42,12 +42,21 @@
 
 .card-set__card {
   @include mobile {
+    &:nth-child(1) .card-set__text {
+      height: auto;
+    }
     width: 100%;
   }
   @include tablet {
+    &:nth-child(1) .card-set__text {
+      height: 147.08px;
+    }
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
+    &:nth-child(1) .card-set__text {
+      height: auto;
+    }
     width: calc((100% - 60px) / 3);
   }
   // margin-right: 30px;
@@ -62,16 +71,27 @@
 }
 
 .card-set__title {
+  margin-bottom: 4px;
   @include font(null, 700, 18px, 2, 0.06em, var(--title-text-color));
 }
 
 .card-set__work {
-  margin-bottom: 4px;
   @include font(null, null, 16px, 1.88, 0.03em, var(--primary-text-color));
 }
 
 .card-set__text {
-  padding: 20px 24px;
+  display: block;
+
+  @include mobile {
+    padding: 20px 24px;
+  }
+  @include tablet {
+    padding: 20px 24px;
+  }
+
+  @include desktop {
+    padding: 20px 24px;
+  }
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
