@@ -3,9 +3,18 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-
-  width: 528px;
-  height: 581px;
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include tablet {
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -22,9 +31,16 @@
 
 .modal__title {
   margin-bottom: 12px;
-
-  @include font(null, 700, 20px, 1.15, 0.03em, #212121);
   text-align: center;
+  @include mobile {
+    @include font(null, 700, 20px, 1.5, 0.03em, #212121);
+  }
+  @include tablet {
+    @include font(null, 700, 20px, 1.5, 0.03em, #212121);
+  }
+  @include desktop {
+    @include font(null, 700, 20px, 1.15, 0.03em, #212121);
+  }
 }
 
 .modal-field {
@@ -105,7 +121,15 @@
   }
   &__text {
     @extend %align-items;
-    @include font(null, null, 14px, 1.71, 0.03em, #757575);
+    @include mobile {
+      @include font(null, null, 12px, 1.16, 0.03em, #757575);
+    }
+    @include tablet {
+      @include font(null, null, 12px, 1.16, 0.03em, #757575);
+    }
+    @include desktop {
+      @include font(null, null, 14px, 1.71, 0.03em, #757575);
+    }
   }
 }
 
