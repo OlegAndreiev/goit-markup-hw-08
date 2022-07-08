@@ -1,8 +1,9 @@
 /* Header  */
 .header {
+  position: relative;
   background-color: var(--header-bg-color);
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-  width: 100%;
+  min-width: 480px;
 }
 
 .main-header {

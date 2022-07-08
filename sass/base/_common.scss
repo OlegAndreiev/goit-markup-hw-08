@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 /* Для всех ссылок */
 .link {
   text-decoration: none;

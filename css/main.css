@@ -19,7 +19,7 @@
   --card-border-color: rgba(238, 238, 238, 1);
 }
 
-.card-set__filter, .modal-check__icon-cover, .modal-check__text, .section-clients__link, .section-work__wrap, .section-features__icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-links__link, .hero-content__button {
+.card-set__filter, .mob-menu-btn, .modal-check__icon-cover, .modal-check__text, .section-clients__link, .section-work__wrap, .section-features__icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-links__link, .hero-content__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +77,14 @@ body {
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
   margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 /* Для всех ссылок */
@@ -466,9 +474,10 @@ body {
 
 /* Header  */
 .header {
+  position: relative;
   background-color: var(--header-bg-color);
   border-bottom: 1px solid rgb(236, 236, 236);
-  width: 100%;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1278,6 +1287,73 @@ body {
 
 .modal-check__icon {
   fill: transparent;
+}
+
+.mob-menu-btn {
+  fill: #212121;
+}
+.mob-menu-btn:hover, .mob-menu-btn:focus {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mob-menu-btn {
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+  }
+}
+.mob-menu-btn .icon-close {
+  display: block;
+}
+.mob-menu-btn .icon-menu {
+  display: none;
+}
+.mob-menu-btn.is-open .icon-close {
+  display: none;
+}
+.mob-menu-btn.is-open .icon-menu {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(250, 235, 215, 0.493);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .menu-container.is-open {
+    display: block;
+    position: fixed;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .card-set {
