@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-bg-color);
 
   @include font(null, 700, 16px, 1.87, 0.06em, var(--button-text-color));

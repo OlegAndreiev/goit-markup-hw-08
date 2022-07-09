@@ -116,20 +116,23 @@
 .card-set__wrap-text {
   position: absolute;
   top: 0;
-
   height: 100%;
   width: 100%;
-  padding: 63px 24px;
-
   @include font(null, 400, 18px, 1.56, 0.03em, #ffffff);
   background-color: rgba(33, 150, 243, 0.9);
-
   transform: translateY(101%);
-  /* 101% - потому-что при зуме окна в 125% видны синие линии */
   @include transition(transform, null, null);
-
   .card-set__card:hover &,
   .card-set__link:focus & {
     transform: translateY(0);
+  }
+  @include mobile {
+    padding: 77px 24px;
+  }
+  @include tablet {
+    padding: 49px 24px 77px 24px;
+  }
+  @include desktop {
+    padding: 63px 24px;
   }
 }

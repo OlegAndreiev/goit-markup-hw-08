@@ -1,6 +1,16 @@
 .team-card__item {
-  padding: 30px 32px;
   text-align: center;
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+  @include desktop {
+    padding: 30px 32px;
+  }
 }
 .team-card__title {
   margin-bottom: 10px;

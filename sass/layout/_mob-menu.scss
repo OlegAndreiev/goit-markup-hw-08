@@ -67,7 +67,7 @@
 .mob-menu__nav {
   display: block;
   text-align: start;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mob-menu__item {
@@ -88,7 +88,6 @@
 
 .mob-connect-cover {
   display: block;
-  margin-top: auto;
 }
 
 .mob-connect__item {
@@ -111,6 +110,7 @@
 }
 
 .mob-connect__contacts {
+  padding-top: 54px;
   margin-bottom: 64px;
 }
 

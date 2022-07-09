@@ -19,7 +19,7 @@
   --card-border-color: rgba(238, 238, 238, 1);
 }
 
-.card-set__filter, .mob-menu-btn, .modal-check__icon-cover, .modal-check__text, .section-clients__link, .section-work__wrap, .section-features__icon, .main-header, .button-modal, .button-close, .subscribe-button, .social-links__link, .hero-content__button {
+.card-set__filter, .mob-menu-btn, .modal-check__icon-cover, .modal-check__text, .section-clients__link, .section-work__wrap, .section-features__icon, .main-header, .button-modal, .button-close, .social-links__link, .hero-content__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,6 +131,7 @@ body.menu-open {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-bg-color);
   font-weight: 700;
   font-size: 16px;
@@ -252,8 +253,24 @@ body.menu-open {
 }
 
 .team-card__item {
-  padding: 30px 32px;
   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team-card__item {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-card__item {
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card__item {
+    padding: 30px 32px;
+  }
 }
 
 .team-card__title {
@@ -360,10 +377,12 @@ body.menu-open {
 .subscribe-button {
   width: 200px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  text-align: center;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -378,6 +397,14 @@ body.menu-open {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe-button:hover, .subscribe-button:focus {
+  color: var(--button-text-color);
+  background-color: var(--button-bg-hover-color);
+}
+.subscribe-button__icon {
+  margin-left: 10px;
+  fill: var(--button-text-color);
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .subscribe-button {
     margin-left: auto;
@@ -389,14 +416,6 @@ body.menu-open {
     margin-left: auto;
     margin-right: auto;
   }
-}
-.subscribe-button:hover, .subscribe-button:focus {
-  color: var(--button-text-color);
-  background-color: var(--button-bg-hover-color);
-}
-.subscribe-button__icon {
-  margin-left: 10px;
-  fill: var(--button-text-color);
 }
 
 .button-close {
@@ -1381,7 +1400,7 @@ body.menu-open {
 .mob-menu__nav {
   display: block;
   text-align: start;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mob-menu__item {
@@ -1405,7 +1424,6 @@ body.menu-open {
 
 .mob-connect-cover {
   display: block;
-  margin-top: auto;
 }
 
 .mob-connect__item {
@@ -1436,6 +1454,7 @@ body.menu-open {
 }
 
 .mob-connect__contacts {
+  padding-top: 54px;
   margin-bottom: 64px;
 }
 
@@ -1591,7 +1610,6 @@ body.menu-open {
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -1599,11 +1617,25 @@ body.menu-open {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
-  /* 101% - потому-что при зуме окна в 125% видны синие линии */
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-set__card:hover .card-set__wrap-text, .card-set__link:focus .card-set__wrap-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .card-set__wrap-text {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-set__wrap-text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__wrap-text {
+    padding: 63px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
