@@ -179,34 +179,55 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-work__list list">
             <li class="section-work__item">
-              <img
-                src="./images/hands_tablet_big.jpg"
-                alt="Человек занимающийся версткой сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/hands_tablet_big-desk.jpg    1x,
+                    ./images/hands_tablet_big-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/hands_tablet_big-desk.jpg"
+                  alt="Человек занимающийся версткой сайта"
+                  width="370"
+                />
+              </picture>
               <div class="section-work__wrap">
                 <p class="section-work__wrap-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="section-work__item">
-              <img
-                src="./images/hands_phone.jpg"
-                alt="Человек занимающийся разработкой мобильного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/hands_phone-desk.jpg 1x, ./images/hands_phone-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/hands_phone-desk.jpg"
+                  alt="Человек занимающийся разработкой мобильного приложения"
+                  width="370"
+                  height="294"
+              /></picture>
               <div class="section-work__wrap">
                 <p class="section-work__wrap-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="section-work__item">
-              <img
-                src="./images/hands_tablet_small.jpg"
-                alt="Человек занимающийся дизайнерской работой"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/hands_tablet_small-desk.jpg    1x,
+                    ./images/hands_tablet_small-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/hands_tablet_small-desk.jpg"
+                  alt="Человек занимающийся дизайнерской работой"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="section-work__wrap">
                 <p class="section-work__wrap-text">Дизайнерские решения</p>
               </div>
@@ -220,12 +241,26 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-card list">
             <li class="team-card__card">
-              <img
-                src="./images/team_Igor.jpg"
-                alt="Игорь Демьяненко - Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_Igor-desk.jpg 1x, ./images/team_Igor-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team_Igor-tab.jpg 1x, ./images/team_Igor-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../images/team_Igor-mob.jpg 1x, ./images/team_Igor-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team_Igor-mob.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-card__item">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-card__position">Product Designer</p>
@@ -258,12 +293,26 @@
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                src="./images/team_Olya.jpg"
-                alt="Ольга Репина - Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_Olya-desk.jpg 1x, ./images/team_Olya-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team_Olya-tab.jpg 1x, ./images/team_Olya-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../images/team_Olya-mob.jpg 1x, ./images/team_Olya-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team_Olya-mob.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-card__item">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p lang="en" class="team-card__position">Frontend Developer</p>
@@ -296,12 +345,26 @@
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                src="./images/team_Nikolaj.jpg"
-                alt="Николай Тарасов - Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_Nikolaj-desk.jpg 1x, ./images/team_Nikolaj-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team_Nikolaj-tab.jpg 1x, ./images/team_Nikolaj-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../images/team_Nikolaj-mob.jpg 1x, ./images/team_Nikolaj-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team_Nikolaj-mob.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-card__item">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p lang="en" class="team-card__position">Marketing</p>
@@ -334,12 +397,26 @@
               </div>
             </li>
             <li class="team-card__card">
-              <img
-                src="./images/team_Michael.jpg"
-                alt="Михаил Ермаков - UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team_Michael-desk.jpg 1x, ./images/team_Michael-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team_Michael-tab.jpg 1x, ./images/team_Michael-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../images/team_Michael-mob.jpg 1x, ./images/team_Michael-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/team_Michael-mob.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-card__item">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p lang="en" class="team-card__position">UI Designer</p>
