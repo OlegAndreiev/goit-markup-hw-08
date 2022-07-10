@@ -3,6 +3,10 @@
   top: 50%;
   left: 50%;
   padding: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
   @include mobile {
     width: 450px;
     height: 609px;
@@ -10,10 +14,6 @@
   @include tablet {
     width: 450px;
     height: 609px;
-  }
-  @include desktop {
-    width: 528px;
-    height: 581px;
   }
 
   background-color: #ffffff;
@@ -27,20 +27,16 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.2);
   }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
   margin-bottom: 12px;
   text-align: center;
-  @include mobile {
-    @include font(null, 700, 20px, 1.5, 0.03em, #212121);
-  }
-  @include tablet {
-    @include font(null, 700, 20px, 1.5, 0.03em, #212121);
-  }
-  @include desktop {
-    @include font(null, 700, 20px, 1.15, 0.03em, #212121);
-  }
+  @include font(null, 700, 20px, 1.15, 0.03em, #212121);
 }
 
 .modal-field {
@@ -120,13 +116,16 @@
     left: 0;
   }
   &__text {
-    @extend %align-items;
+    display: inline-block;
+
+    @include font(null, null, 12px, 1.16, 0.03em, #757575);
+
     @include mobile {
-      @include font(null, null, 12px, 1.16, 0.03em, #757575);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    @include tablet {
-      @include font(null, null, 12px, 1.16, 0.03em, #757575);
-    }
+
     @include desktop {
       @include font(null, null, 14px, 1.71, 0.03em, #757575);
     }
@@ -134,8 +133,7 @@
 }
 
 .modal-check__icon-cover {
-  @extend %align-items;
-
+  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;

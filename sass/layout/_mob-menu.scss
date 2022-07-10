@@ -1,18 +1,16 @@
 .mob-menu-btn {
   @extend %align-items;
+  margin-left: auto;
+  padding: 0;
+
   fill: #212121;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
   &:hover,
   &:focus {
     fill: var(--accent-color);
   }
-
-  margin-left: auto;
-  padding: 0;
-
-  border: none;
-  background-color: transparent;
-  z-index: 2;
-
   & .icon-close {
     display: block;
   }
@@ -52,6 +50,7 @@
     padding: 40px 48px;
     background-color: #ffffff;
     z-index: 1;
+    overflow: auto;
   }
 
   @include tablet {
