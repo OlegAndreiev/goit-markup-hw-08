@@ -8,10 +8,9 @@
   background-color: var(--footer-bg-color);
 
   &__container {
-    @include mobile {
-      display: flex;
-      flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -28,13 +27,11 @@
 }
 
 .main-footer {
-  @include mobile {
-    text-align: center;
-    margin-bottom: 60px;
-  }
+  text-align: center;
+  margin-bottom: 60px;
+
   @include tablet {
     display: inline-block;
-    text-align: center;
     margin-bottom: 0px;
   }
   @include desktop {

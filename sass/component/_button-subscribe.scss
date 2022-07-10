@@ -23,10 +23,8 @@
     margin-left: 10px;
     fill: var(--button-text-color);
   }
-  @include mobile {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
   @include tablet {
     margin-left: auto;
     margin-right: auto;

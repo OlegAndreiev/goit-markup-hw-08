@@ -1,9 +1,8 @@
 .social__join {
-  @include mobile {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
   @include tablet {
     display: inline-block;
     margin: 0px;
@@ -15,10 +14,10 @@
 .social-links__title {
   @include font(null, 700, 14px, 1.14, 0.03em, #ffffff);
   text-transform: uppercase;
-  @include mobile {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+
+  text-align: center;
+  margin-bottom: 20px;
+
   @include tablet {
     text-align: center;
     margin-bottom: 20px;
