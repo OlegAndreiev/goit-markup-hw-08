@@ -2,7 +2,6 @@
   padding: 0;
 
   background-color: var(--button-filter-bgc-color);
-
   @include font(inherit, 500, 16px, 1.62, 0.03em, var(--button-filter-text-color));
   text-align: center;
   border-style: none;

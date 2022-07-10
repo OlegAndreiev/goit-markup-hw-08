@@ -26,9 +26,6 @@
       width: calc((100% - 150px) / 6);
     }
   }
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
   &__icon {
     fill: currentColor;
   }
@@ -36,7 +33,6 @@
 
 .section-clients__link {
   width: 100%;
-  // width: 170px;
   height: 92px;
   @extend %align-items;
 

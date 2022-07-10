@@ -18,11 +18,6 @@
   transition-duration: $td;
   transition-timing-function: $ttf;
 }
-// @mixin min-mobile {
-//   @media screen and (max-width: 479px) {
-//     @content;
-//   }
-// }
 
 @mixin mobile {
   @media screen and (min-width: 480px) {
