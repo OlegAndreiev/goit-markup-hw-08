@@ -83,6 +83,7 @@
 .modal-field-textarea {
   margin-bottom: 20px;
   height: 138px;
+  @include font(null, null, 12px, 1.16, 0.01em, #757575);
 }
 
 .modal-field-textarea__input {

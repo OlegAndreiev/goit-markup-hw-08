@@ -1,8 +1,5 @@
 .card-set {
-  // min-width: 480px;
-  @media screen and (max-width: 1199px) {
-    @include section(60px, 60px);
-  }
+  @include section(60px, 60px);
   @include desktop {
     @include section(94px, 94px);
   }
@@ -11,12 +8,12 @@
 .card-set__filter {
   gap: 8px;
   @extend %align-items;
-  @include mobile {
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    justify-content: flex-start;
-  }
+
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: flex-start;
+
   @include tablet {
     margin-bottom: 30px;
     justify-content: center;
@@ -43,12 +40,11 @@
 }
 
 .card-set__card {
-  @include mobile {
-    &:nth-child(1) .card-set__text {
-      height: auto;
-    }
-    width: 100%;
+  &:nth-child(1) .card-set__text {
+    height: auto;
   }
+  width: 100%;
+
   @include tablet {
     &:nth-child(1) .card-set__text {
       height: 147.08px;
@@ -84,16 +80,8 @@
 .card-set__text {
   display: block;
 
-  @include mobile {
-    padding: 20px 24px;
-  }
-  @include tablet {
-    padding: 20px 24px;
-  }
+  padding: 20px 24px;
 
-  @include desktop {
-    padding: 20px 24px;
-  }
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
@@ -120,6 +108,7 @@
   top: 0;
   height: 100%;
   width: 100%;
+  padding: 77px 24px;
   @include font(null, 400, 18px, 1.56, 0.03em, #ffffff);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
@@ -127,9 +116,6 @@
   .card-set__card:hover &,
   .card-set__link:focus & {
     transform: translateY(0);
-  }
-  @include mobile {
-    padding: 77px 24px;
   }
   @include tablet {
     padding: 49px 24px 77px 24px;

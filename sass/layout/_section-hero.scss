@@ -1,6 +1,5 @@
 /* Hero */
 .overlay {
-  // min-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -47,16 +46,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  // width: 696px;
 
   @include mobile {
-    @include font(null, null, 26px, 1.62, null, null);
     width: 360px;
   }
-  @include tablet {
-    @include font(null, null, 26px, 1.62, null, null);
-    width: 360px;
-  }
+
   @include desktop {
     @include font(null, null, 44px, 1.36, null, null);
     width: 696px;
