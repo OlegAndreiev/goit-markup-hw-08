@@ -1,19 +1,21 @@
 /* Auth nav */
 .header__connect {
-  display: flex;
   @include mobile {
     display: none;
   }
   @include tablet {
+    display: flex;
     flex-direction: column;
     margin-left: auto;
     gap: 10px;
   }
   @include desktop {
+    display: flex;
     margin-left: auto;
     flex-direction: row;
+    gap: 0px;
     .connect__item + .connect__item {
-      margin-left: 50px;
+      margin-left: 30px;
     }
   }
 }

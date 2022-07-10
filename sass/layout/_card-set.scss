@@ -1,5 +1,5 @@
 .card-set {
-  min-width: 480px;
+  // min-width: 480px;
   @media screen and (max-width: 1199px) {
     @include section(60px, 60px);
   }
@@ -19,9 +19,11 @@
   }
   @include tablet {
     margin-bottom: 30px;
+    justify-content: center;
   }
   @include desktop {
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 

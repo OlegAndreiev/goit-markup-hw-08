@@ -1,6 +1,6 @@
 /* Features */
 .section-features {
-  min-width: 480px;
+  // min-width: 480px;
   @include section(94px, 47px);
   @media screen and (max-width: 1199px) {
     @include section(60px, 60px);

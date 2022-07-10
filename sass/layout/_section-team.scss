@@ -1,5 +1,5 @@
 .section-team {
-  min-width: 480px;
+  // min-width: 480px;
   background-color: var(--section-bg-color);
   @media screen and (max-width: 1199px) {
     @include section(60px, 60px);

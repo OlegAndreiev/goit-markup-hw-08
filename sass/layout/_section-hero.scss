@@ -1,6 +1,6 @@
 /* Hero */
 .overlay {
-  min-width: 480px;
+  // min-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -8,16 +8,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @include mobile {
-    height: 400px;
-    @include section(118px, 118px);
+
+  @include section(118px, 118px);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-mob.jpg);
+  @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-mob.jpg);
-    @include retina {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-mob-2x.jpg);
-    }
+      url(../images/hero-mob-2x.jpg);
   }
+  height: 400px;
+
   @include tablet {
     height: 400px;
     @include section(118px, 118px);
@@ -42,13 +42,13 @@
 }
 
 .hero-content__title {
-  @include font(null, 900, 44px, 1.36, 0.06em, var(--primary-bg-color));
+  @include font(null, 900, 26px, 1.62, 0.06em, var(--primary-bg-color));
   text-align: center;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  // width: 696px;
 
   @include mobile {
     @include font(null, null, 26px, 1.62, null, null);

@@ -6,6 +6,7 @@
   }
   @include tablet {
     display: inline-block;
+    margin: 0px;
   }
   @include desktop {
     margin-left: 70px;
