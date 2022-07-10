@@ -7,9 +7,8 @@
 }
 
 .main-header__logo {
-  @include mobile {
-    @include section(16px, 16px);
-  }
+  @include section(16px, 16px);
+
   @include tablet {
     @include section(26px, 26px);
   }
@@ -32,12 +31,9 @@
 
 .logo--font {
   font-family: 'Raleway', sans-serif;
-  @include mobile {
-    @include font(null, 700, 24px, 1.16, 0.03em, null);
-  }
-  @include tablet {
-    @include font(null, 700, 24px, 1.16, 0.03em, null);
-  }
+
+  @include font(null, 700, 24px, 1.16, 0.03em, null);
+
   @include desktop {
     @include font(null, 700, 26px, 1.19, 0.03em, null);
   }

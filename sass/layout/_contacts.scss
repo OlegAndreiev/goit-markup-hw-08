@@ -1,12 +1,5 @@
-@include mobile {
-  .contacts__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-@include tablet {
-  .contacts__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
+.contacts__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 @include desktop {
