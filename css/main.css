@@ -676,18 +676,18 @@ body.menu-open {
 
 /* Hero */
 .overlay {
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: rgb(47, 48, 58);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  padding-left: 15px;
-  padding-right: 15px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
-  height: 400px;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
@@ -1244,18 +1244,14 @@ body.menu-open {
 
 .mob-menu-btn {
   fill: #212121;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
 }
 .mob-menu-btn:hover, .mob-menu-btn:focus {
   fill: var(--accent-color);
-}
-@media screen and (min-width: 480px) {
-  .mob-menu-btn {
-    margin-left: auto;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    z-index: 2;
-  }
 }
 .mob-menu-btn .icon-close {
   display: block;
@@ -1280,28 +1276,26 @@ body.menu-open {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .mob-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-  }
-  .mob-menu.is-open {
-    height: 100%;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-end;
-    position: fixed;
-    padding: 40px 48px;
-    background-color: #ffffff;
-    z-index: 1;
-  }
+.mob-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.mob-menu.is-open {
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-end;
+  position: fixed;
+  padding: 40px 48px;
+  background-color: #ffffff;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
