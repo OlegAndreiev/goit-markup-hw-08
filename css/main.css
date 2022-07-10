@@ -595,10 +595,8 @@ body.menu-open {
 }
 
 /* Site nav */
-@media screen and (min-width: 480px) {
-  .nav__site {
-    display: none;
-  }
+.nav__site {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .nav__site {
@@ -674,10 +672,8 @@ body.menu-open {
 }
 
 /* Auth nav */
-@media screen and (min-width: 480px) {
-  .header__connect {
-    display: none;
-  }
+.header__connect {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header__connect {

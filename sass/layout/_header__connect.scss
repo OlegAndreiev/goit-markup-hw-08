@@ -1,8 +1,7 @@
 /* Auth nav */
 .header__connect {
-  @include mobile {
-    display: none;
-  }
+  display: none;
+
   @include tablet {
     display: flex;
     flex-direction: column;
