@@ -2,10 +2,9 @@
 .section-title {
   text-align: center;
 
-  @include mobile {
-    @include font(null, 700, 28px, 1.17, 0.03em, var(--title-text-color));
-    margin-bottom: 30px;
-  }
+  @include font(null, 700, 28px, 1.17, 0.03em, var(--title-text-color));
+  margin-bottom: 30px;
+
   @include tablet {
     @include font(null, 700, 28px, 1.17, 0.03em, var(--title-text-color));
     margin-bottom: 30px;

@@ -220,16 +220,12 @@ body.menu-open {
 /* Section */
 .section-title {
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .section-title {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--title-text-color);
-    margin-bottom: 30px;
-  }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .section-title {
@@ -254,18 +250,8 @@ body.menu-open {
 
 .team-card__item {
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .team-card__item {
-    padding-top: 30px;
-    padding-bottom: 24px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team-card__item {
-    padding-top: 30px;
-    padding-bottom: 24px;
-  }
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {
   .team-card__item {
@@ -883,12 +869,8 @@ body.menu-open {
 
 .section-team {
   background-color: var(--section-bg-color);
-}
-@media screen and (max-width: 1199px) {
-  .section-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section-team {
@@ -923,12 +905,8 @@ body.menu-open {
 /* Clients */
 .section-clients {
   background-color: var(--primary-bg-color);
-}
-@media screen and (min-width: 480px) {
-  .section-clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .section-clients {
@@ -948,12 +926,7 @@ body.menu-open {
   gap: 30px;
 }
 .section-clients__item {
-  width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .section-clients__item {
-    width: calc((100% - 30px) / 2);
-  }
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .section-clients__item {

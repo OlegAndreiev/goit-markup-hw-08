@@ -2,9 +2,9 @@
 .section-clients {
   // min-width: 480px;
   background-color: var(--primary-bg-color);
-  @include mobile {
-    @include section(60px, 60px);
-  }
+
+  @include section(60px, 60px);
+
   @include tablet {
     @include section(60px, 60px);
   }
@@ -18,10 +18,8 @@
     gap: 30px;
   }
   &__item {
-    width: 100%;
-    @include mobile {
-      width: calc((100% - 30px) / 2);
-    }
+    width: calc((100% - 30px) / 2);
+
     @include tablet {
       width: calc((100% - 60px) / 3);
     }
