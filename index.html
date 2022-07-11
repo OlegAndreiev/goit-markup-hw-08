@@ -59,6 +59,7 @@
             class="mob-menu-btn__icon"
             width="40"
             height="40"
+            role="img"
             aria-expanded="false"
             aria-controls="mob-menu"
             aria-label="Переключатель мобильного меню"
@@ -70,7 +71,7 @@
         <div class="mob-menu" id="mob-menu" data-menu>
           <ul class="mob-menu__nav list">
             <li class="mob-menu__item">
-              <a class="mob-menu__link link" href="./index.html">Студия</a>
+              <a class="mob-menu__link link current" href="./index.html">Студия</a>
             </li>
             <li class="mob-menu__item">
               <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
@@ -110,7 +111,10 @@
     <main>
       <section class="hero-content">
         <div class="overlay">
-          <h1 class="hero-content__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-content__title">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
           <button
             type="button"
             class="hero-content__button"

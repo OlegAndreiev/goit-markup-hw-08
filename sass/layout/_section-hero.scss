@@ -3,8 +3,7 @@
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
   @include section(118px, 118px);
 
   background-color: rgba(47, 48, 58, 1);
@@ -40,7 +39,7 @@
 }
 
 .hero-content__title {
-  @include font(null, 900, 26px, 1.62, 0.06em, var(--primary-bg-color));
+  @include font(null, 900, 20px, 1.62, 0.06em, var(--primary-bg-color));
   text-align: center;
   text-transform: uppercase;
   margin-left: auto;
@@ -48,6 +47,7 @@
   margin-bottom: 30px;
 
   @include mobile {
+    @include font(null, 900, 26px, 1.62, 0.06em, var(--primary-bg-color));
     width: 360px;
   }
 

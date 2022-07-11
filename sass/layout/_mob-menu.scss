@@ -7,6 +7,7 @@
   border: none;
   background-color: transparent;
   z-index: 2;
+  @include transition(null, fill, null);
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -50,7 +51,6 @@
     padding: 40px 48px;
     background-color: #ffffff;
     z-index: 1;
-    overflow: auto;
   }
 
   @include tablet {
@@ -76,8 +76,12 @@
 }
 .mob-menu__link {
   @include font(null, 500, 40px, 1.17, 0.02em, #212121);
+  @include transition(null, color, null);
   &:hover,
   &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
     color: var(--accent-color);
   }
 }
@@ -99,6 +103,7 @@
 }
 .mob-connect__link-mail {
   @include font(null, 500, 24px, 1.16, 0.02em, #757575);
+  @include transition(null, color, null);
   &:hover,
   &:focus {
     color: var(--accent-color);
