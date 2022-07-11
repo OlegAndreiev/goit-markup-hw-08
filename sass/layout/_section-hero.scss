@@ -1,8 +1,9 @@
 /* Hero */
-.overlay {
+.hero-content {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+  flex-grow: 1;
 
   @include section(118px, 118px);
 
@@ -40,8 +41,8 @@
 
 .hero-content__title {
   @include font(null, 900, 20px, 1.62, 0.06em, var(--primary-bg-color));
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
