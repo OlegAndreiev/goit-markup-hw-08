@@ -42,9 +42,7 @@
   width: 100%;
 
   @include tablet {
-    &:nth-child(1) .card-set__text {
-      height: 147.08px;
-    }
+    display: flex;
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
@@ -66,6 +64,9 @@
 
 .card-set__text {
   display: block;
+  @include tablet {
+    flex-grow: 1;
+  }
 
   padding: 20px 24px;
 
@@ -76,7 +77,10 @@
 
 .card-set__link {
   display: block;
-
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
   @include transition(null, null, box-shadow);
   &:hover,
   &:focus {
@@ -95,7 +99,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 77px 24px;
+  padding: 32px 24px;
+  overflow: scroll;
   @include font(null, 400, 18px, 1.56, 0.03em, #ffffff);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
@@ -103,6 +108,9 @@
   .card-set__card:hover &,
   .card-set__link:focus & {
     transform: translateY(0);
+  }
+  @include mobile {
+    padding: 77px 24px;
   }
   @include tablet {
     padding: 49px 24px 77px 24px;
